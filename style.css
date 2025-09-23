@@ -1,5 +1,6 @@
 :root{
     --cor-cafe: #c0a080;
+    --cor-blck: rgb(44, 46, 47);
 }
 
 * {
@@ -16,6 +17,7 @@
     color: white;
     border-radius: .5rem;
     border: none;
+    transition: padding 0.2s ease;
 }
 
 .btn:hover{
@@ -42,10 +44,16 @@
     height: 3rem;
 }
 
-.header .nav-menu a{
+.header .nav-menu a {
     font-size: 1.25rem;
     color: var(--cor-cafe);
     margin-left: 1rem;
+    border-bottom: 0.1rem solid transparent;
+    transition: border-bottom 0.5s ease;
+}
+
+.header .nav-menu a:hover {
+    border-bottom: 0.1rem solid var(--cor-cafe);
 }
 
 .header .icons{
@@ -160,6 +168,7 @@
     background-color: rgb(44, 46, 47);
     border: rgb(44, 46, 47);
     border-radius: 1rem;
+    transition: background-color 0.5s ease;
 }
 
 .content .box-menu .box-menu-item:hover{ 
@@ -192,7 +201,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 #review .content .box-menu .box-menu-item{ 
@@ -204,6 +213,28 @@
     display: flex;
 }
 
+#review .content .box-menu .box-menu-item .box-menu-item-content img{ 
+    border-radius: 1rem;
+    display: flex;
+}
+
 #review .content .box-menu .box-menu-item .box-menu-item-content p{ 
     margin: 2rem;
+}
+
+#address{
+    background-color: black;
+}
+
+#address .content .map{
+    margin-bottom: 2.5rem;
+}
+
+#address .content .social i{
+    padding: 1rem;
+    border-radius: 45%;
+    background-color: var(--cor-cafe);
+    margin: 1.5rem;
+    margin-bottom: 2.5rem;
+    color: var(--cor-blck);
 }
