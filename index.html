@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo favicon.png" type="image/x-icon">
     <title>Coffee</title>
 </head>
 
 <body>
     <header>
-        <div class="header">
+        <div id="header">
             <div class="logo">
                 <img src="img/logo.png" alt="Logo">
             </div>
@@ -25,6 +26,9 @@
             <div class="icons">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="btn-header">
+                <button><i class="fa-solid fa-bars"></i></button>
             </div>
         </div>
     </header>
@@ -50,7 +54,7 @@
                     <img src="img/about-img.jpg" alt="Coffee">
                 </div>
                 <div class="box-content-about">
-                    <h2>What makes our coffee special</h2>
+                    <h1>What makes our coffee special</h1>
                     <p>What makes our coffee special is the combination of careful bean selection, artisanal roasting,
                         and a commitment to preserving the most authentic aromas and flavors. Each cup is the result of
                         dedication and passion, offering not only a superior beverage but also a unique sensory
@@ -108,14 +112,16 @@
     <section id="review">
         <div class="content">
             <h1>review</h1>
-            <div class="box-menu">
-                <div class="box-menu-item">
-                    <div class="box-menu-item-title">
+            <div class="box-review">
+                <div class="box-review-item">
+                    <div class="box-review-item-title">
                         <h2>James Smith</h2>
                     </div>
-                    <div class="box-menu-item-content">
-                        <div class="box-menu-item-content">
+                    <div class="box-review-item-content">
+                        <div class="box-review-item-content-img">
                             <img src="img/pic-1.png" alt="Coffe">
+                        </div>
+                        <div class="box-review-item-content-text">
                             <p>
                                 I can confidently say that this is by far the best coffee I have ever tried in the city.
                                 The beans are carefully selected and roasted artisanally, which is noticeable right in
@@ -125,69 +131,79 @@
                                 attention to detail. Every visit is a memorable experience and highly recommended for
                                 any coffee lover.
                             </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
                 </div>
-                <div class="box-menu-item">
-                    <div class="box-menu-item-title">
+                <div class="box-review-item">
+                    <div class="box-review-item-title">
                         <h2>Emily Johnson</h2>
                     </div>
-                    <div class="box-menu-item-content">
-                        <div class="box-menu-item-content">
+                    <div class="box-review-item-content">
+                        <div class="box-review-item-content-img">
                             <img src="img/pic-2.png" alt="Coffe">
+                        </div>
+                        <div class="box-review-item-content-text">
                             <p>
-                                I'm passionate about coffee and always looking for new coffee shops to try. I recently
+                                I'm passionate about coffee and always looking for new coffee shops to try. I
+                                recently
                                 tried this brand's coffee and was impressed! The aroma is incredibly captivating,
-                                reminiscent of freshly roasted beans, and the flavor is balanced, with smooth notes of
+                                reminiscent of freshly roasted beans, and the flavor is balanced, with smooth notes
+                                of
                                 chocolate and caramel. Every sip brings that comforting feeling of quality artisanal
-                                coffee. Plus, the creaminess of the cappuccino foam is perfect, making the experience
+                                coffee. Plus, the creaminess of the cappuccino foam is perfect, making the
+                                experience
                                 complete. I recommend it to both those who enjoy full-bodied coffees and those who
                                 prefer something lighter and more delicate.
                             </p>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
                 </div>
-                <div class="box-menu-item">
-                    <div class="box-menu-item-title">
+                <div class="box-review-item">
+                    <div class="box-review-item-title">
                         <h2>Michael Brown</h2>
                     </div>
-                    <div class="box-menu-item-content">
-                        <div class="box-menu-item-content">
+                    <div class="box-review-item-content">
+                        <div class="box-review-item-content-img">
                             <img src="img/pic-3.png" alt="Coffe">
+                        </div>
+                        <div class="box-review-item-content-text">
                             <p>
-                                I never imagined a coffee could surprise me so much! From the moment the order arrived
-                                at the table, the aroma awakened all my senses. The taste is rich, deep, and harmonious,
+                                I never imagined a coffee could surprise me so much! From the moment the order
+                                arrived
+                                at the table, the aroma awakened all my senses. The taste is rich, deep, and
+                                harmonious,
                                 without any excessive bitterness. The latte I ordered had perfectly steamed milk,
-                                complementing the espresso without overpowering it. I truly felt that every step of the
+                                complementing the espresso without overpowering it. I truly felt that every step of
+                                the
                                 preparation was done with care and dedication. This coffee not only wakes you up but
                                 also provides a genuine moment of pleasure and relaxation.
                             </p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="address">
